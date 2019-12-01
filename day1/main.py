@@ -2,7 +2,7 @@
 import math
 
 
-def get_fuel(mass):
+def get_fuel(mass: int) -> int:
     DIVISION_CONSTANT = 3.0
     return math.floor(float(mass) / DIVISION_CONSTANT) - 2
 
@@ -23,4 +23,4 @@ with open('./input') as file:
 
         total_fuel += new_fuel
         line = file.readline()
-    print(int(total_fuel))
+    print(total_fuel)
