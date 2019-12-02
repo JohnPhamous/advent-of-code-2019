@@ -24,7 +24,6 @@ LENGTH = len(operations)
 operations[1] = 12
 operations[2] = 2
 
-print(operations)
 index = 0
 while index < LENGTH:
     operation = int(operations[index])
@@ -40,8 +39,7 @@ while index < LENGTH:
     elif operation == MULTIPLY_CODE:
         operations[c_index] = a * b
     elif operation == END_CODE:
-        print("END")
         break
     index += OFFSET
 
-print(operations)
+print('Part 1', operations[0])
